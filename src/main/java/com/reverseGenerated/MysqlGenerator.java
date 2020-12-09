@@ -53,15 +53,8 @@ public class MysqlGenerator {
     dsc.setPassword("123456");
     autoGenerator.setDataSource(dsc);
 
-    //
-    InjectionConfig cfg = new InjectionConfig() {
-      @Override
-      public void initMap() {
-        // to do nothing
-      }
-    };
     List<FileOutConfig> focList = new ArrayList<>();
-    focList.add(new FileOutConfig("/templates/mapper.xml.ftl") {
+    focList.add(new FileOutConfig("template/mapper.xml.vm") {
       @Override
       public String outputFile(TableInfo tableInfo) {
         // 自定义输入文件名称
@@ -69,9 +62,20 @@ public class MysqlGenerator {
       }
     });
 
+    InjectionConfig cfg = new InjectionConfig() {
+      @Override
+      public void initMap() {
+        // to do nothing
+      }
+    };
+
+    cfg.setFileOutConfigList(focList);
+    autoGenerator.setCfg(cfg);
+
     //设置包属性
     PackageConfig packageConfig = new PackageConfig();
     packageConfig.setEntity("pojo.entity");
+    packageConfig.setMapper("mapper");
     packageConfig.setParent("com.reverseGenerated");
     autoGenerator.setPackageInfo(packageConfig);
 
@@ -82,7 +86,7 @@ public class MysqlGenerator {
         .setController(null)
         .setEntity("template/entity.java.vm")
         .setService(null)
-        .setMapper(null);
+        .setMapper("template/mapper.java.vm");
     autoGenerator.setTemplate(tc);
 
     String tableName = scanner("表名");
@@ -114,6 +118,8 @@ public class MysqlGenerator {
     globalConfig.setAuthor("xuz_Ben");
     globalConfig.setOpen(false);
     globalConfig.setEntityName(newTableName);
+    globalConfig.setMapperName(newTableName + "Mapper");
+    globalConfig.setXmlName(newTableName + "Mapper");
     autoGenerator.setGlobalConfig(globalConfig);
 
     autoGenerator.execute();

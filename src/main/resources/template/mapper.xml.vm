@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+    #set($d=',')
+    <resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+        #foreach($field in ${table.fields})
+            #if(${field} == "id")
+            <id column="id" jdbcType="#if(${field.propertyType} == 'String')VARCHAR#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)DOUBLE#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)INTEGER #else${field.type.toUpperCase()}#end" property="${field.propertyName}"/>
+            #else
+            <result column="${field.name}" jdbcType="#if(${field.propertyType} == 'String')VARCHAR#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)DOUBLE#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)INTEGER #else${field.type.toUpperCase()}#end" property="${field.propertyName}"/>
+            #end
+        #end
+    </resultMap>
+
+  <!-- 通用查询结果列-->
+  <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+</mapper>

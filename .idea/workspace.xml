@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f22da305-7822-41a3-8011-8ede6d5a5236" name="Default Changelist" comment="" />
+    <list default="true" id="f22da305-7822-41a3-8011-8ede6d5a5236" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/reverse-generated.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/template/mapper.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/template/mapper.xml.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/pojo/entity/DimRegionArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/reversegenerated.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/template/entity.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/template/entity.java.vm" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/reverseGenerated" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -34,10 +48,12 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1lMcnMYguJPyY6X6OyZH9dcvOKa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/reverseGenerated/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -63,7 +79,7 @@
   <component name="RunManager" selected="Application.MysqlGenerator">
     <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.reverseGenerated.MysqlGenerator" />
-      <module name="reversegenerated" />
+      <module name="reverse-generated" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.reverseGenerated.*" />
@@ -74,8 +90,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseGeneratedApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="reversegenerated" />
+    <configuration name="ReverseGeneratedApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="reverse-generated" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.reverseGenerated.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.reverseGenerated.ReverseGeneratedApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -90,13 +112,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.ReverseGeneratedApplication" />
-      <item itemvalue="Application.MysqlGenerator" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MysqlGenerator" />
+        <item itemvalue="Spring Boot.ReverseGeneratedApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -111,10 +130,25 @@
       <option name="presentableId" value="Default" />
       <updated>1607410566956</updated>
       <workItem from="1607410568598" duration="12239000" />
+      <workItem from="1607429587781" duration="130000" />
+      <workItem from="1607478323789" duration="8707000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
