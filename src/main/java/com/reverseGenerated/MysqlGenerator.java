@@ -76,16 +76,19 @@ public class MysqlGenerator {
     PackageConfig packageConfig = new PackageConfig();
     packageConfig.setEntity("pojo.entity");
     packageConfig.setMapper("mapper");
+    packageConfig.setService("service");
+    packageConfig.setServiceImpl("service.impl");
+    packageConfig.setController("controller");
     packageConfig.setParent("com.reverseGenerated");
     autoGenerator.setPackageInfo(packageConfig);
 
     //模板
     TemplateConfig tc = new TemplateConfig();
     tc.setXml(null)
-        .setServiceImpl(null)
-        .setController(null)
+        .setServiceImpl("template/serviceImpl.java.vm")
+        .setController("template/controller.java.vm")
         .setEntity("template/entity.java.vm")
-        .setService(null)
+        .setService("template/service.java.vm")
         .setMapper("template/mapper.java.vm");
     autoGenerator.setTemplate(tc);
 
@@ -120,6 +123,9 @@ public class MysqlGenerator {
     globalConfig.setEntityName(newTableName);
     globalConfig.setMapperName(newTableName + "Mapper");
     globalConfig.setXmlName(newTableName + "Mapper");
+    globalConfig.setServiceName(newTableName + "Service");
+    globalConfig.setServiceImplName(newTableName + "ServiceImpl");
+    globalConfig.setControllerName(newTableName + "Controller");
     autoGenerator.setGlobalConfig(globalConfig);
 
     autoGenerator.execute();

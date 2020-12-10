@@ -1,0 +1,19 @@
+package ${package.ServiceImpl};
+
+import javax.annotation.Resource;
+import org.springframework.stereotype.Service;
+import ${package.Service}.${table.serviceName};
+import ${package.Mapper}.${table.mapperName};
+
+/**
+ * ${entity}业务处理类
+ *
+ * @author ${author}
+ * @since ${date}
+ * */
+@Service
+public class ${table.serviceImplName} implements ${table.serviceName} {
+
+  @Resource
+  private ${table.mapperName} mapper;
+}
