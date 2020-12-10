@@ -46,7 +46,7 @@ public class MysqlGenerator {
 
     //数据原配置
     DataSourceConfig dsc = new DataSourceConfig();
-    dsc.setUrl("jdbc:postgresql://localhost:5432/hive-init");
+    dsc.setUrl("jdbc:postgresql://localhost:5432/postgres");
     // dsc.setSchemaName("public");
     dsc.setDriverName("org.postgresql.Driver");
     dsc.setUsername("postgres");

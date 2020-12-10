@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.reverseGenerated.mapper.DateResuceUserMapper">
+    <resultMap id="BaseResultMap" type="com.reverseGenerated.pojo.entity.DateResuceUser">
+            <result column="id" jdbcType="BIGINT" property="id"/>
+            <result column="data_resuce_id" jdbcType="BIGINT" property="dataResuceId"/>
+            <result column="ip" jdbcType="VARCHAR" property="ip"/>
+            <result column="port" jdbcType="VARCHAR" property="port"/>
+            <result column="account" jdbcType="VARCHAR" property="account"/>
+            <result column="password" jdbcType="VARCHAR" property="password"/>
+            <result column="userid" jdbcType="BIGINT" property="userid"/>
+            <result column="create_time" jdbcType="DATE" property="createTime"/>
+            <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+            <result column="update_time" jdbcType="DATE" property="updateTime"/>
+            <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+    </resultMap>
+
+  <!-- 通用查询结果列-->
+  <sql id="Base_Column_List">
+        id, data_resuce_id, ip, port, account, password, userid, create_time, create_by, update_time, update_by
+    </sql>
+</mapper>

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22da305-7822-41a3-8011-8ede6d5a5236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/controller/DimRegionAreaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/template/controller.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/template/service.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/template/serviceImpl.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/createTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/pojo/dto/DataSurceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/pojo/entity/base/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/mapper/DimRegionAreaMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DimRegionAreaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/entity.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/entity.java.vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/template/entity.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/template/entity.java.vm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MysqlGenerator">
+  <component name="RunManager" selected="Spring Boot.ReverseGeneratedApplication">
     <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.reverseGenerated.MysqlGenerator" />
       <module name="reverse-generated" />
@@ -110,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Spring Boot.ReverseGeneratedApplication" />
+        <item itemvalue="Application.MysqlGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -127,8 +126,16 @@
       <updated>1607410566956</updated>
       <workItem from="1607410568598" duration="12239000" />
       <workItem from="1607429587781" duration="130000" />
-      <workItem from="1607478323789" duration="12079000" />
+      <workItem from="1607478323789" duration="14887000" />
     </task>
+    <task id="LOCAL-00001" summary="添加service和controller模板">
+      <created>1607592020829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607592020829</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,5 +153,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加service和controller模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加service和controller模板" />
   </component>
 </project>
