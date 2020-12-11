@@ -20,6 +20,7 @@ import com.reverseGenerated.pojo.entity.base.BaseEntity;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @TableName("p_date_resuce_user")
 public class DateResuceUser extends BaseEntity {
 
@@ -44,6 +45,12 @@ public class DateResuceUser extends BaseEntity {
      **/
     @TableField("port")
     private String port;
+
+    /**
+     * 数据库名称
+     */
+    @TableField("database_name")
+    private String databaseName;
 
     /**
      * 账号

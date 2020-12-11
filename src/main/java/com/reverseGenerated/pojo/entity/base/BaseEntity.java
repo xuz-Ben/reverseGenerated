@@ -14,9 +14,6 @@ import lombok.NoArgsConstructor;
  * @Date 2020/12/10
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
 public class BaseEntity implements Serializable {
 
   private static final long serialVersionUID = 1L;
