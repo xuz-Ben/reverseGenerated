@@ -18,5 +18,5 @@ public interface DateResuceUserService {
    * @param dataResuceId 数据类型id
    * @return
    */
-  List<DataResuceUserDto> getAllDataResuceUser(String user, String dataResuceId);
+  List<DataResuceUserDto> getAllDataResuceUser(Long user, Long dataResuceId);
 }

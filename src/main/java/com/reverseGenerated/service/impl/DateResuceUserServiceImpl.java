@@ -68,7 +68,7 @@ public class DateResuceUserServiceImpl implements DateResuceUserService {
   }
 
   @Override
-  public List<DataResuceUserDto> getAllDataResuceUser(String user, String dataResuceId) {
+  public List<DataResuceUserDto> getAllDataResuceUser(Long user, Long dataResuceId) {
     QueryWrapper<DateResuceUser> wrapper = new QueryWrapper<>();
     wrapper.lambda().eq(DateResuceUser::getUserid, user).eq(DateResuceUser::getDataResuceId, dataResuceId);
     List<DateResuceUser> dateResuceUserList = mapper.selectList(wrapper);
