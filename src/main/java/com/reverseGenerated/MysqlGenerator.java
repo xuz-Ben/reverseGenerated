@@ -41,16 +41,16 @@ public class MysqlGenerator {
     //代码生成器
     AutoGenerator autoGenerator = new AutoGenerator();
 
-    String projectPath = System.getProperty("user.dir");
+    String projectPath = "E:\\master\\open_data_service\\interfaceData";
 
 
     //数据原配置
     DataSourceConfig dsc = new DataSourceConfig();
-    dsc.setUrl("jdbc:postgresql://localhost:5432/postgres");
+    dsc.setUrl("jdbc:mysql://127.0.0.1:3306/interface-data?useUnicode=true&characterEncoding=utf-8&useSSL=false");
     // dsc.setSchemaName("public");
-    dsc.setDriverName("org.postgresql.Driver");
-    dsc.setUsername("postgres");
-    dsc.setPassword("123456");
+    dsc.setDriverName("com.mysql.jdbc.Driver");
+    dsc.setUsername("root");
+    dsc.setPassword("root");
     autoGenerator.setDataSource(dsc);
 
     List<FileOutConfig> focList = new ArrayList<>();
@@ -74,12 +74,12 @@ public class MysqlGenerator {
 
     //设置包属性
     PackageConfig packageConfig = new PackageConfig();
-    packageConfig.setEntity("pojo.entity");
-    packageConfig.setMapper("mapper");
+    packageConfig.setEntity("pojo.entities");
+    packageConfig.setMapper("dao");
     packageConfig.setService("service");
-    packageConfig.setServiceImpl("service.impl");
+    packageConfig.setServiceImpl("service.Impl");
     packageConfig.setController("controller");
-    packageConfig.setParent("com.reverseGenerated");
+    packageConfig.setParent("com.openData.interfaceData");
     autoGenerator.setPackageInfo(packageConfig);
 
     //模板

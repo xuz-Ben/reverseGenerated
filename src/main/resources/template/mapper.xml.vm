@@ -4,10 +4,10 @@
     #set($d=',')
     <resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
         #foreach($field in ${table.fields})
-            #if(${field} == "id")
-            <id column="id" jdbcType="#if(${field.propertyType} == 'String')VARCHAR#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)DOUBLE#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)INTEGER #else${field.type.toUpperCase()}#end" property="${field.propertyName}"/>
+            #if(${field.name} == "id")
+            <id column="id" jdbcType="#if(${field.type.toUpperCase().indexOf("BIGINT(")} > -1)BIGINT#else${field.type.toUpperCase()}#end" property="${field.propertyName}"/>
             #else
-            <result column="${field.name}" jdbcType="#if(${field.propertyType} == 'String')VARCHAR#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)DOUBLE#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)INTEGER #else${field.type.toUpperCase()}#end" property="${field.propertyName}"/>
+            <result column="${field.name}" jdbcType="#if(${field.propertyType} == 'String')VARCHAR#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} > -1)DOUBLE#elseif(${field.propertyType} == 'BigDecimal' && ${field.type.indexOf(",")} < -1)INTEGER#elseif(${field.type.indexOf("int(")} > -1)INTEGER#else${field.type.toUpperCase()}#end" property="${field.propertyName}"/>
             #end
         #end
     </resultMap>

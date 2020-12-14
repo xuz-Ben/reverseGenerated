@@ -8,15 +8,12 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 #end
 #if(${entityLombokModel})
-import javax.validation.constraints.Null;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
  #end
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.NoArgsConstructor;
-import ${package.Entity}.base.BaseEntity;
 /**
  * ${entity}对象
  *
@@ -27,6 +24,7 @@ import ${package.Entity}.base.BaseEntity;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 #end
 @TableName("${table.name}")
 #if(${swagger2})
@@ -37,7 +35,7 @@ public class ${entity} extends ${superEntityClass}#if(${activeRecord})<${entity}
 #elseif(${activeRecord})
 public class ${entity} extends Model<${entity}> {
 #else
-public class ${entity} extends BaseEntity {
+public class ${entity} extends BaseEntities {
 #end
 
 ## ----------  BEGIN 字段循环遍历  ----------
@@ -70,7 +68,7 @@ public class ${entity} extends BaseEntity {
     #if(${logicDeleteFieldName}==${field.name})
     @TableLogic
     #end
-    #if(${field.name} != "id" && ${field.name} != "create_time" && ${field.name} != "create_by" && ${field.name} != "update_time" && ${field.name} != "update_by")
+    #if(${field.name} != "id" && ${field.name} != "create_time" && ${field.name} != "created_by" && ${field.name} != "update_time" && ${field.name} != "updated_by")
     /**
      * ${field.comment}
      *
@@ -78,7 +76,6 @@ public class ${entity} extends BaseEntity {
     @TableField("${field.name}")
     private ${field.propertyType} ${field.propertyName};
     #end
-
 #end
 #if(!${entityLombokModel})
     #foreach($field in ${table.fields})
@@ -102,7 +99,6 @@ public class ${entity} extends BaseEntity {
         }
     #end
 #end
-
 #if(${entityColumnConstant})
     #foreach($field in ${table.fields})
     public static final String ${field.name.toUpperCase()} = "${field.name}";

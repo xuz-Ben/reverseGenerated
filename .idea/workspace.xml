@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f22da305-7822-41a3-8011-8ede6d5a5236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/pojo/dto/NameAndDescDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/until/DataSourceUntil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/service/DateResuceUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/service/DateResuceUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/service/impl/DateResuceUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/service/impl/DateResuceUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reverseGenerated/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/entity.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/entity.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/mapper.xml.vm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/mapper.xml.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/MysqlGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/controller/DateResuceUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/controller/DateResuceUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/pojo/entity/DateResuceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/pojo/entity/DateResuceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/pojo/entity/base/BaseEntity$BaseEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/pojo/entity/base/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/pojo/entity/base/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/service/DateResuceUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/service/DateResuceUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reverseGenerated/service/impl/DateResuceUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reverseGenerated/service/impl/DateResuceUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DateResuceUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DateResuceUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/template/entity.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/template/entity.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/template/mapper.xml.vm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/template/mapper.xml.vm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +26,20 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +66,7 @@
   <component name="ProjectId" id="1lMcnMYguJPyY6X6OyZH9dcvOKa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -71,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReverseGeneratedApplication">
+  <component name="RunManager" selected="Application.MysqlGenerator">
     <configuration name="MysqlGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.reverseGenerated.MysqlGenerator" />
       <module name="reverse-generated" />
@@ -109,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ReverseGeneratedApplication" />
         <item itemvalue="Application.MysqlGenerator" />
+        <item itemvalue="Spring Boot.ReverseGeneratedApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +153,8 @@
       <workItem from="1607429587781" duration="130000" />
       <workItem from="1607478323789" duration="15696000" />
       <workItem from="1607651918342" duration="8872000" />
-      <workItem from="1607911121279" duration="286000" />
+      <workItem from="1607911121279" duration="1673000" />
+      <workItem from="1607933031547" duration="3459000" />
     </task>
     <task id="LOCAL-00001" summary="添加service和controller模板">
       <created>1607592020829</created>
@@ -158,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607658973362</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="准备配置表内容工作">
+      <created>1607911482537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607911482537</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +215,7 @@
     <MESSAGE value="新增数据源选择业务接口" />
     <MESSAGE value="填写数据源、框架的全局异常处理，统一返回类" />
     <MESSAGE value="修改，填充接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改，填充接口" />
+    <MESSAGE value="准备配置表内容工作" />
+    <option name="LAST_COMMIT_MESSAGE" value="准备配置表内容工作" />
   </component>
 </project>
