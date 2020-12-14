@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.reverseGenerated.constant.ErrorCodeEx;
 import com.reverseGenerated.exception.ReverseGeneratedApplicationException;
 import com.reverseGenerated.pojo.dto.DataResuceUserDto;
+import com.reverseGenerated.pojo.dto.NameAndDescDto;
 import com.reverseGenerated.pojo.entity.DateResuceUser;
 import com.reverseGenerated.pojo.from.DataResuceFrom;
 import java.text.SimpleDateFormat;
@@ -87,5 +88,10 @@ public class DateResuceUserServiceImpl implements DateResuceUserService {
           .userid(dateResuceUser.getUserid())
           .build();
     }).collect(Collectors.toList());
+  }
+
+  @Override
+  public List<NameAndDescDto> getAllDatabaseTable(String id) {
+    return null;
   }
 }

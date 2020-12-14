@@ -1,6 +1,7 @@
 package com.reverseGenerated.service;
 
 import com.reverseGenerated.pojo.dto.DataResuceUserDto;
+import com.reverseGenerated.pojo.dto.NameAndDescDto;
 import com.reverseGenerated.pojo.from.DataResuceFrom;
 import java.util.List;
 
@@ -19,4 +20,11 @@ public interface DateResuceUserService {
    * @return
    */
   List<DataResuceUserDto> getAllDataResuceUser(Long user, Long dataResuceId);
+
+  /**
+   * 获取所有的表
+   * @param id 连接
+   * @return
+   */
+  List<NameAndDescDto> getAllDatabaseTable(String id);
 }
